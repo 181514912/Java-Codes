@@ -42,6 +42,7 @@ public class DigitalMax {
             // Temp dibagi 10
             temp=temp/10;
         }
+        // Mengeluarkan output dengan hasil maksimal
         System.out.println("Maximum no:"+" "+ans);
     }
 }
