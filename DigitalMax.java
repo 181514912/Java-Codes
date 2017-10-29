@@ -7,7 +7,8 @@ public class DigitalMax {
     {
         // Membuat scanner
         Scanner in=new Scanner(System.in);
-        // Masukkan angka
+
+        //User will enter a number
         System.out.println("Enter a number :");
         // Mengambil inputan integer
         int n=in.nextInt();
