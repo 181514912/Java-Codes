@@ -1,0 +1,1 @@
+The project "grafo_BF" is an implementation of the Bellman-Ford Algorithm in java.

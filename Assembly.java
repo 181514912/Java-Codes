@@ -1,32 +1,32 @@
-
+package javacodes;
 import java.util.*;
 
 public class Assembly {
 
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
-        Map<String, Integer> vars = new HashMap<String, Integer>();
-        Map<String, Integer> labels = new HashMap<String, Integer>();
-        Map<Integer, Integer> endif = new HashMap<Integer, Integer>();
-        Map<Integer, Integer> loop = new HashMap<Integer, Integer>();
+        Map<String, Integer> vars = new HashMap<>();
+        Map<String, Integer> labels = new HashMap<>();
+        Map<Integer, Integer> endif = new HashMap<>();
+        Map<Integer, Integer> loop = new HashMap<>();
         Stack ifs = new Stack();
         Stack fors = new Stack();
         String temp;
-        ArrayList<String> code = new ArrayList<String>();
+        ArrayList<String> code = new ArrayList<>();
         while (true) {
             temp = in.nextLine();
-            if(temp.equals("###")){
+            if (temp.equals("###")) {
                 break;
             }
             code.add(temp);
-      
+
         }
         //temp = in.nextLine();
         //code.add(temp);
         int l = code.size();
         String comp[];
         int a, b, i;
-        a=b=i=0;
+        a = b = i = 0;
         for (i = 0; i < l; i++) {
             comp = code.get(i).split(" ");
             switch (comp[0]) {
@@ -84,12 +84,12 @@ public class Assembly {
                     break;
                 case "END":
                     endif.put((Integer) ifs.pop(), i);
-                    if(!fors.empty()){
-                    fors.pop();
+                    if (!fors.empty()) {
+                        fors.pop();
                     }
                     break;
                 case "CONTINUE":
-                    loop.put(i, (Integer) fors.pop()-1);
+                    loop.put(i, (Integer) fors.pop() - 1);
                     break;
                 default:
                     i = i;   //do nothing
@@ -140,15 +140,17 @@ public class Assembly {
                     break;
                 case "IF":
                     if (comp[1].compareTo("a") >= 0 && comp[1].compareTo("z") <= 0) {
-                    if (vars.containsKey(comp[1])) {
-                        a = vars.get(comp[1]);
-                    }} else {
+                        if (vars.containsKey(comp[1])) {
+                            a = vars.get(comp[1]);
+                        }
+                    } else {
                         a = Integer.parseInt(comp[1]);
                     }
                     if (comp[2].compareTo("a") >= 0 && comp[2].compareTo("z") <= 0) {
-                    if (vars.containsKey(comp[2])) {
-                        b = vars.get(comp[2]);
-                    }} else {
+                        if (vars.containsKey(comp[2])) {
+                            b = vars.get(comp[2]);
+                        }
+                    } else {
 
                         b = Integer.parseInt(comp[2]);
                     }
@@ -163,8 +165,8 @@ public class Assembly {
                 case "LABEL":
                     break;
                 case "END":
-                    if(!ifs.empty()){
-                    ifs.pop();
+                    if (!ifs.empty()) {
+                        ifs.pop();
                     }
                     break;
                 case "CONTINUE":
