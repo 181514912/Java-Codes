@@ -3,7 +3,7 @@
 *   number is 1 then given number is magic number else not
 */
 
-import  java.io.;
+import  java.io.*;
 class Magic_number
 {
 	public static void main(String ar[])
