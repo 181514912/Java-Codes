@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 class Palindrome_or_not {
 
-  public static void main(Sting args[])
+  public static void main(String args[])
   {
     Scanner x = new Scanner(System.in);
     
