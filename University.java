@@ -1,8 +1,6 @@
-/**
- * This class represents University and contains it's child domain classes(Course, Student, Sem, Department and Institute)
+/*		
+ this program is used to find minimum distance between two vertices while traversing all available vertices.		
  */
-package javacodes;
-
 import java.util.*;
 
 /**
