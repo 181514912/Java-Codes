@@ -6,7 +6,7 @@
 import  java.io.*;
 class Magic_number
 {
-	public static void main(String ar[])
+	public static void main(String ar[]) throws IOException
 {
 
 	BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
