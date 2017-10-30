@@ -1,3 +1,5 @@
+// Deklarasi depedensi
+
 import java.util.*;
 
 public class DigitalMax {
