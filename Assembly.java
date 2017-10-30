@@ -1,7 +1,7 @@
 //creating the class assembly
 
 package javacodes;
-
+//created an assembly class
 import java.util.*;
 
 public class Assembly {
