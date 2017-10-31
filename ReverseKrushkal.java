@@ -15,7 +15,7 @@ class Graph
 		adj[w].add(v);
 	}
 	void removeEdge(int v,int w){
-		
+
 		for(int i=0;i<adj[v].size();i++){
 		int t=adj[v].get(i);
 		if(t==w){
@@ -28,10 +28,8 @@ class Graph
 			if(t==v){
 				adj[w].remove(i);
 			}
-			}
-		
+			}		
 	}
-
 	boolean BFS(int s,int d)
 	{
 		boolean visited[] = new boolean[V];
@@ -82,7 +80,6 @@ class Graph
 		for (int i=0; i<v; ++i)
 			adj[i] = new LinkedList<Integer>();
 	}
-	
 	void ReverseKruskal(){
 		
 		Edge result[]=new Edge[V];
@@ -117,9 +114,7 @@ public class ReverseKrushkal {
 		public static void main(String[] args) {
 			int V=6;
 			int E=8;
-			
-			
-			
+					
 			Graph graph=new Graph(V,E);
 			
 			graph.edge[0].src=0;
