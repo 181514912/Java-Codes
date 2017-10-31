@@ -1,11 +1,12 @@
-// magic number program 1234 is a magic number, if wee add all the number//
-//seperatly 1+2+3+4 =10 again adding the result 1+0= 1 if single digit //
-//number is 1 then given number is magic number else not//
+/** Magic number program 1234 is a magic number, if we add all the number
+*   seperatly 1+2+3+4 =10 again adding the result 1+0= 1 if single digit
+*   number is 1 then given number is magic number else not
+*/
 
-import  java.io.;
+import  java.io.*;
 class Magic_number
 {
-	public static void main(String ar[])
+	public static void main(String ar[]) throws IOException
 {
 
 	BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
@@ -25,8 +26,7 @@ if(v==1)
 	}
 else
 	{
-	System.out.println("The entered number is NOT  magic number");
-
+		System.out.println("The entered number is NOT  magic number");
 	}
 }
 }
