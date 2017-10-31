@@ -7,7 +7,6 @@ class Magic_number
 {
 	public static void main(String ar[]) throws IOException
 {
-
 	BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
 	int n,v,t,d=0,s;
 	System.out.println("Enter the number");
