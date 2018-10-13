@@ -1,6 +1,6 @@
 // Recursive class for solving Tower of Hanoi problem using 4 rods
 
-public class recursiveTOH { 
+public class TOHusing4Rods { 
 
   // *********************************** MAIN CLASS ********************************************
   public static void main(String args[]){ 
