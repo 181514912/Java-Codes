@@ -17,7 +17,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-class largestNumber
+class formLargestNumberFromArray
 {
     public static String A[];
     public static void main (String[] args)
