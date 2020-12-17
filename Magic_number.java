@@ -2,12 +2,11 @@
 //seperatly 1+2+3+4 =10 again adding the result 1+0= 1 if single digit //
 //number is 1 then given number is magic number else not//
 
-import  java.io.;
+import  java.io.*;
 class Magic_number
 {
-	public static void main(String ar[])
+	public static void main(String ar[]) throws IOException
 {
-
 	BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
 	int n,v,t,d=0,s;
 	System.out.println("Enter the number");
